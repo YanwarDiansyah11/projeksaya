@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            @apply bg-pink-100 flex items-center justify-center min-h-screen;
+            font-family: 'Roboto', sans-serif;
+        }
+        .card {
+            @apply bg-white p-8 rounded-lg shadow-lg relative overflow-hidden;
+            max-width: 400px;
+            text-align: center;
+        }
+        .card::before, .card::after {
+            content: '';
+            @apply absolute w-1/2 h-full bg-brown-500;
+        }
+        .card::before {
+            @apply top-0 left-0 rounded-tl-lg rounded-bl-lg;
+        }
+        .card::after {
+            @apply bottom-0 right-0 rounded-tr-lg rounded-br-lg;
+        }
+        .title {
+            font-family: 'Dancing Script', cursive;
+            @apply text-4xl text-brown-700;
+        }
+        .subtitle {
+            font-family: 'Dancing Script', cursive;
+            @apply text-3xl text-brown-700;
+        }
+        .message {
+            @apply mt-4 text-brown-600;
+        }
+        .footer {
+            @apply mt-8 text-brown-700;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">Selamat Ulang Tahun</h1>
+        <h2 class="subtitle">Devi Almeira</h2>
+        <p class="message mt-6">“Semoga di tahun ini devi jadi wanita yang sholihah, tangguh dan kuat untuk melawan penyakitnya devi yaa.”</p>
+        <p class="message mt-4">“Ketika hidup mu memiliki seribu alasan untuk menangis, kamu harus memiliki setidaknya satu alasan untuk kamu tersenyum.”</p>
+        <p class="message mt-4">“Ketika hidup mu memiliki seribu masalah, kamu harus memiliki setidak nya satu rumah untuk kau tenang.”</p>
+        <p class="footer mt-6">Happy birthday devii.</p>
+        <p class="footer mt-2">By : mas iyan</p>
+    </div>
+</body>
+</html>
